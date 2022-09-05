@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html,
+body,
+#root {
+  font: 0.9rem sans-serif;
+  background-image: linear-gradient(
+    to right top,
+    #3a4149,
+    #41464f,
+    #494a54,
+    #514e59,
+    #59535d
+  );
+  color: #98929c;
+  height: 100%;
+  margin: 0;
+}
