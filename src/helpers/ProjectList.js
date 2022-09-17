@@ -45,11 +45,10 @@ export const ProjectList = [
     description: `Education meets Nintendo! A playful twist on Fullstack Academy's Junior Phase Final Project.`,
     skills:
       'React, Redux, Node.js, Postgres SQL, Git, Github, HTML, CSS, Express, Javascript, Mocha, Chai, Faker',
-    learned: 'Utilized Express to handle HTTP requests and Sequelize to interface databases. Additionally React, Redux and React-Redux used on the front-end to manage state. Styling created with CSS, experimenting with flexbox. Additionally, I learned how to write tests using Mocha and Chai.',
+    learned:
+      'Utilized Express to handle HTTP requests and Sequelize to interface databases. Additionally React, Redux and React-Redux used on the front-end to manage state. Styling created with CSS, experimenting with flexbox. Additionally, I learned how to write tests using Mocha and Chai.',
     goal: "For Grace Hopper's junior phase final project, I was tasked with creating a RESTful website for a university to manage campuses and students.",
   },
-
-
 ];
 
 export const techSkills = [
@@ -70,4 +69,19 @@ export const techSkills = [
   'Netlify',
   'Faker',
   'Framer Motion',
+];
+
+export const testimonials = [
+  {
+    name: 'Amy Morrisett',
+    recommendation:
+      "Selina was one of my teammates for our Grace Hopper Program capstone project. I found myself continually impressed by her incredible drive and curiosity; she was always willing to put in extra work to learn new technologies (like Firebase) and was never deterred by roadblocks we encountered. Selina's excellent communication skills top-notch work ethic, and inquisitive nature would make any team very lucky to work alongside her.",
+    linkedin: 'https://www.linkedin.com/in/amy-morrisett/',
+  },
+  {
+    name: 'Donna Sayos',
+    recommendation:
+      'Selina is an amazing person. She is hardworking, passionate at everything that she does, and is a team player. I enjoyed working with her with our e-commerce website project and would love to work with her again in the future. We even stayed up multiple nights together to work on our project. Ohh the memories.',
+    linkedin: 'https://www.linkedin.com/in/dsayos/',
+  },
 ];

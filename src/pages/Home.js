@@ -20,7 +20,7 @@ import Container from '@mui/material/Container';
 
 import me from '../styles/selina.png';
 import resume from '../assets/resume.pdf';
-import { techSkills } from '../helpers/ProjectList';
+import { techSkills, testimonials } from '../helpers/ProjectList';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
