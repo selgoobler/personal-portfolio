@@ -1,0 +1,35 @@
+.project {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.project h1 {
+  margin-top: 8rem;
+  color: #3e497a;
+  font-size: 30px;
+  font-weight: 700;
+}
+.project img {
+margin-top: 1rem;
+  max-height: 320px;
+  border-radius: 10px;
+}
+
+.project p {
+
+  margin-left: 20rem;
+  margin-right: 20rem;
+  font-size: 25px;
+  color: #3e497a;
+}
+
+.project svg {
+  font-size: 60px;
+  color: #3e497a;
+}

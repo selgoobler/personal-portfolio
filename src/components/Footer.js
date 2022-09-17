@@ -1,22 +1,32 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
+import GithubIcon from '@material-ui/icons/GitHub';
 
+import '../styles/Footer.css';
 
-export default function Footer() {
+function Footer() {
+
   return (
-    <>
-      <footer>
-        <Container>
-          <Row>
-            <Col
-              className='text-center fw-bolder my-5'
-              style={{ color: '#E4E4E5', letterSpacing: '3px' }}
-            >
-Selina
-            </Col>
-          </Row>
-        </Container>
-      </footer>
-    </>
+    <div className="footer">
+      <div className="socialMedia">
+        <LinkedInIcon
+          onClick={(event) =>
+            (window.location.href = 'https://www.linkedin.com/in/sselinang/')
+          }
+        />
+        <a href="mailto:sselinang@gmail.com">
+          <EmailIcon />
+        </a>
+        <GithubIcon
+          onClick={(event) =>
+            (window.location.href = 'https://github.com/selgoobler')
+          }
+        />
+      </div>
+      <p>Let's connect!</p>
+    </div>
   );
 }
+
+export default Footer;
