@@ -33,7 +33,6 @@
   transition: 0s;
 }
 
-
 .about .prompt {
   width: 40%;
   font-size: 30px;
@@ -68,10 +67,13 @@
   .about h2 {
     font-size: 40px;
     font-weight: bold;
+    padding-top:  80px
   }
-
+  .about img {
+  height: 250px
+  }
   .about .prompt {
-    margin-top: 20px;
+  
     font-size: 20px;
     width: 80%;
     font-weight: bold;
@@ -80,22 +82,24 @@
 
   .home {
     padding-bottom: 4rem;
-    
   }
 
   .skills {
     text-align: center;
     font-size: 20px;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
   .list {
     padding: 0;
     font-size: 20px;
   }
 
+  .proficient h6 {
+    color: red;
+  }
   .skills h1 {
     font-size: 30px;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     /* margin-top: 6rem; */
   }
 }

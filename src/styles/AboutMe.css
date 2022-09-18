@@ -1,6 +1,6 @@
-.about-image{
-width:100%;
-height:auto
+.about-image {
+  width: 100%;
+  height: auto;
 }
 .aboutMe {
   width: auto;
@@ -21,31 +21,33 @@ height:auto
   margin-right: 1rem;
 }
 
+.testCard {
+  padding: 2rem;
+
+}
 
 .testList {
-  display: grid;
-    place-items: center;
-    user-select: none;
-    grid-template-columns: 1fr;
-    /* width:25%; */
-    width:40rem;
-    padding-top: 3rem;
-  /* // */
-  /* display: flex;
+  user-select: none;
+  width: 40%;
+  padding-top: 3rem;
 
-  align-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.testCard {
-  /* color: rgb(103, 103, 162);
-    display: flex;
-  
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  margin-top: 1rem;
-  height: 400px;
+.testTitle {
+  background-color: rgb(99, 128, 135);
+  color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bolder;
 }
+
+
 .testCard .testText {
   margin: 20px;
   opacity: 0.6;
@@ -66,23 +68,11 @@ height:auto
 }
 
 @media only screen and (max-width: 800px) {
-  .descriptionList {
-    width: 300px;
-    height: 100%;
+  .testList {
+    width: 400px;
+    font-size: smaller;
     /* padding-bottom: 2rem; */
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     padding: 2rem;
-  }
-  .descriptionGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .proficient {
-    columns: 1;
-    -webkit-columns: 1;
-    -moz-columns: 1;
-    width: 100%;
-    height: 100%;
   }
 }

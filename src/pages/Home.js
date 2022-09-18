@@ -76,7 +76,7 @@ function Home() {
         >
           <div className="list">
             <div className="description">
-              <h1 className="">Technical Skills</h1>
+              <h1 className="skill-header">Technical Skills</h1>
               <div className="descriptionGrid">
                 <div className="descriptionList">
                   <h6>Languages/Frameworks</h6>
