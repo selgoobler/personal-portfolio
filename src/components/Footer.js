@@ -24,7 +24,6 @@ function Footer() {
           }
         />
       </div>
-
       <p> Copyright &copy; Selina</p>
     </div>
   );

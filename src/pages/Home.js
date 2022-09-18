@@ -1,35 +1,16 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+
 import '../styles/Home.css';
 import '../styles/Description.css';
+import me from '../assets/selina.png';
+import Popup from '../components/Popup';
+import { languages, tools } from '../helpers/ProjectList';
 
 import ContactMailIcon from '@mui/icons-material/ContactMail';
-
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import EmailIcon from '@material-ui/icons/Email';
-import GithubIcon from '@material-ui/icons/GitHub';
 import CheckIcon from '@mui/icons-material/Check';
 
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Grid from '@mui/material/Grid';
-
-import Popover from '@mui/material/Popover';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-
-import me from '../assets/selina.png';
-import resume from '../assets/resume.pdf';
-
-import Popup from '../components/Popup';
-import { techSkills, familiarSkills } from '../helpers/ProjectList';
-import { testimonials } from '../helpers/Testimonials';
-
 function Home() {
-  const navigate = useNavigate();
   const [popUp, setPopUp] = useState(false);
 
   const handleContact = () => {
@@ -46,8 +27,10 @@ function Home() {
       <div className="home">
         <div className="about">
           <h2>Hi, I'm Selina!</h2>
+          <motion.div animate={{ rotate: 360 }}>
+            <img src={me} alt="selfie"></img>
+          </motion.div>
 
-          <img src={me} alt="selfie"></img>
           <div className="prompt">
             <p>
               A full stack developer with a passion for learning and creating.
@@ -67,45 +50,38 @@ function Home() {
                 (window.location.href = 'https://github.com/selgoobler')
               }
             /> */}
-          </div>
-          <div className="action">
-            <ContactMailIcon onClick={handleContact} sx={{ fontSize: 50 }} />
-            <Popup trigger={popUp} setTrigger={setPopUp}></Popup>
+
+            <div className="action">
+              <ContactMailIcon onClick={handleContact} sx={{ fontSize: 50 }} />
+              <Popup trigger={popUp} setTrigger={setPopUp}></Popup>
+            </div>
           </div>
         </div>
         <motion.div
           className="skills"
-          // animate={{ x: 100 }}
-          // transition={{
-          //   delay: 0.5,
-          //   x: { duration: 1 },
-          //   default: { ease: 'linear' },
-          // }}
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             default: {
               duration: 0.3,
-              ease: [0, 0.71, 0.2, 1.01]
+              ease: [0, 0.71, 0.2, 1.01],
             },
             scale: {
-              type: "spring",
+              type: 'spring',
               damping: 5,
               stiffness: 100,
-              restDelta: 0.001
-            }
+              restDelta: 0.001,
+            },
           }}
         >
           <div className="list">
-            <h1 className="mt-5 text-center fw-bold fs-2">Technical Skills</h1>
             <div className="description">
+              <h1 className="">Technical Skills</h1>
               <div className="descriptionGrid">
                 <div className="descriptionList">
                   <h6>Languages/Frameworks</h6>
-                  <br></br>
-
                   <div className="proficient">
-                    {techSkills.map((skill) => (
+                    {languages.map((skill) => (
                       <div>
                         <CheckIcon />
                         {skill}
@@ -113,12 +89,10 @@ function Home() {
                     ))}
                   </div>
                 </div>
-
                 <div className="descriptionList">
                   <h6>Tools</h6>
-                  <br></br>
-                  <div className="familiar">
-                    {familiarSkills.map((skill) => (
+                  <div className="proficient">
+                    {tools.map((skill) => (
                       <div>
                         <CheckIcon />
                         {skill}
@@ -129,17 +103,10 @@ function Home() {
               </div>
             </div>
           </div>
-          <Button
-            variant="contained"
-            href={resume}
-            download
-            style={{ color: '#ffffff', backgroundColor: '#6C9CD5' }}
-          >
-            Resume
-          </Button>
+          <br></br>
         </motion.div>
-        <br></br>
       </div>
+      
     </motion.div>
   );
 }

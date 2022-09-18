@@ -8,9 +8,16 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: medium;
   font-weight: 500;
-  color: rgb(48, 105, 105);
-  margin-bottom: 4rem;
+
   margin-top: 1rem;
+}
+
+
+.description h1 {
+  font-weight: bolder;
+  padding-bottom: 2rem;
+  opacity: 0.7;
+  font-size: 25px;
 }
 
 .descriptionGrid {
@@ -22,7 +29,22 @@
   display: grid;
   place-items: center;
   user-select: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+  border-radius: 30px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-color: black;
+  color: #f8f5f5;
+  background-color: rgb(83, 83, 128);
+  opacity: 0.8;
 }
+
+.descriptionList:hover {
+  transform: scale(1.2);
+}
+
 .testList {
   display: grid;
   place-items: center;
@@ -31,7 +53,7 @@
 
 .descriptionList h6 {
   font-weight: bolder;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .descriptionTitle {
@@ -50,6 +72,7 @@
   transform: scale(1.2);
   margin-right: 1rem;
 }
+
 .proficient {
   columns: 2;
   -webkit-columns: 2;
@@ -57,34 +80,10 @@
   width: 20rem;
 }
 
-.familiar {
-  columns: 1;
-  -webkit-columns: 1;
-  -moz-columns: 1;
-}
 
-.testCard {
-  /* color: rgb(103, 103, 162);
-  display: flex;
 
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  margin-top: 1rem;
-  height: 400px;
-}
-.testCard .testText {
-  margin: 20px;
-  opacity: 0.6;
-  color: rgb(103, 103, 162);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-.testCard:hover {
-  box-shadow: 0px 3px 15px rgba(228, 181, 181, 0.5);
-  transition: 0.3s ease-in;
-  cursor: pointer;
-}
+
 
 @media only screen and (max-width: 1300px) {
   .descriptionList {
@@ -95,14 +94,23 @@
 @media only screen and (max-width: 800px) {
   .descriptionList {
     width: 300px;
-    height: 300px;
-    padding-bottom: 5rem;
+    height: 100%;
+    /* padding-bottom: 2rem; */
     grid-template-columns: 1fr;
+    padding: 2rem;
   }
   .descriptionGrid {
     display: grid;
     grid-template-columns: 1fr;
+
   }
-  .descriptionList {
+
+  .proficient {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    width: 100%;
+    height: 100%;
+
   }
 }

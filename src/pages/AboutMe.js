@@ -1,36 +1,58 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import '../styles/Description.css';
-import '../styles/Home.css';
+import '../styles/AboutMe.css';
 
+import resume from '../assets/resume.pdf';
+import Button from '@mui/material/Button';
 
-import CheckIcon from '@mui/icons-material/Check';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 import { testimonials } from '../helpers/Testimonials';
+import about from '../assets/about-me.png';
 
 export default function AboutMe() {
   const navigate = useNavigate();
   return (
-    <motion.div>
-      <span>
-          I am a curious person with a passion for growth, as exemplified by my
-          healthcare career and educational accomplishments. I know that when I
-          want to achieve something, it is attainable through hard work and
-          dedication. An example is my iOS application created with React Native
-          and Expo Go for my weekend stackathon project during the Grace Hopper
-          program. Those are two new technologies I learned in a small span of
-          time, shortly after completing an intense sprint of an e-commerce
-          project.
-        </span>
-      
-      <div className="description">
-        <h1 className="mt-5 text-center fw-bold fs-2">Testimonies</h1>
+    <motion.div className="about-container">
+      <img src={about} alt="me" className="about-container about-image"></img>
+
+      <div className="aboutMe">
+        {/* <h1 className="mt-5 mb-2 text-center fw-bold fs-2">Testimonies</h1> */}
         <div className="testList">
-          <div>
+          <Swiper
+            className="container testimonials_container"
+            modules={[Pagination]}
+            spaceBetween={40}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+          >
+            {testimonials.map(
+              ({ image, name, link, recommendation }, index) => (
+                <SwiperSlide key={index} className="testimonial">
+                  <div className="descriptionTitle">
+                    <img src={image} alt="Peer one" />
+                    <h2>{name}</h2>
+                    <a href={link} target="_blank" rel="noreferrer">
+                      <LinkedInIcon color="disabled" />
+                    </a>
+                  </div>
+                  <p>{recommendation}</p>
+                  <br></br>
+                </SwiperSlide>
+              )
+            )}
+          </Swiper>
+        </div>
+        {/* <div>
+            
             {testimonials.map((testimony) => (
               <div>
                 <Card className="testCard">
@@ -52,9 +74,17 @@ export default function AboutMe() {
                 </Card>
               </div>
             ))}
-          </div>
-        </div>
+          </div> */}
+        <Button
+          variant="contained"
+          href={resume}
+          download
+          style={{ color: '#ffffff', backgroundColor: '#6C9CD5' }}
+        >
+          Download Resume
+        </Button>
       </div>
+      <div className="pt-3"></div>
     </motion.div>
   );
 }

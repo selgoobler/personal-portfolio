@@ -32,9 +32,7 @@
   margin-top: 5rem;
   transition: 0s;
 }
-.about img:hover {
-  transform: scale(1.2);
-}
+
 
 .about .prompt {
   width: 40%;
@@ -77,6 +75,12 @@
     font-size: 20px;
     width: 80%;
     font-weight: bold;
+    padding-bottom: 5rem;
+  }
+
+  .home {
+    padding-bottom: 4rem;
+    
   }
 
   .skills {
