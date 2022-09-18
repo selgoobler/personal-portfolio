@@ -68,6 +68,7 @@ export default function AboutMe() {
           href={resume}
           download
           style={{ color: '#ffffff', backgroundColor: '#6C9CD5' }}
+          className = 'mt-5'
         >
           Download Resume
         </Button>
