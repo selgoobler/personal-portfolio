@@ -3,6 +3,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import GithubIcon from '@material-ui/icons/GitHub';
 
+
 import '../styles/Footer.css';
 
 function Footer() {
@@ -23,6 +24,7 @@ function Footer() {
           }
         />
       </div>
+
       <p> Copyright &copy; Selina</p>
     </div>
   );

@@ -39,12 +39,15 @@ const Contact = () => {
   };
   return (
     <motion.div
-    animate={{ x: 100 }}
-    transition={{
-      delay: 0.5,
-      x: { duration: 1 },
-      default: { ease: "linear" }
-    }}
+    // animate={{ x: 100 }}
+    // transition={{
+    //   delay: 0.5,
+    //   x: { duration: 1 },
+    //   default: { ease: "linear" }
+    // }}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
     >
       <div className="contact">
         <Box sx={{ flexGrow: 1,  }}>
@@ -54,11 +57,10 @@ const Contact = () => {
             display="flex"
             justifyContent="center"
             alignItems="center"
-            style={{ marginTop: '2rem' }}
+      
           >
             <Card
               sx={{ width: 345 }}
-              style={{ marginTop: '5rem',  }}
             >
               <CardHeader
                 className="text-center"

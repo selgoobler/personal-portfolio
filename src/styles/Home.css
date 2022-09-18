@@ -1,7 +1,7 @@
 .home {
   width: 100%;
   align-items: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #3e497a;
 }
 
@@ -15,20 +15,31 @@
   align-items: center;
   text-align: center;
   background-color: #7192a5;
+  background-repeat: repeat;
   color: #f0f0f0;
 }
 
 .about h2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 80px;
   color: #e2c6ad;
   height: 50px;
   font-weight: 800;
 }
 
+.about img {
+  max-height: 20rem;
+  margin-top: 5rem;
+  transition: 0s;
+}
+.about img:hover {
+  transform: scale(1.2);
+}
+
 .about .prompt {
   width: 40%;
   font-size: 30px;
+  margin-top: 2rem;
 }
 .prompt svg {
   font-size: 60px;
@@ -44,22 +55,16 @@
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
-
-
 }
 
-
-
 .skills .list {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 60%;
-  
 }
 
 .list span {
   font-size: 20px;
 }
-
 
 @media only screen and (max-width: 600px) {
   .about h2 {
@@ -72,24 +77,21 @@
     font-size: 20px;
     width: 80%;
     font-weight: bold;
-
   }
 
   .skills {
     text-align: center;
     font-size: 20px;
     grid-template-columns: 1fr;
-   
   }
   .list {
     padding: 0;
-        font-size: 20px;
+    font-size: 20px;
   }
 
   .skills h1 {
     font-size: 30px;
     margin-bottom: 3rem;
     /* margin-top: 6rem; */
-
   }
 }
