@@ -63,7 +63,7 @@ export const techSkills = [
   'CSS',
   'Sequelize',
   'PostgreSQL',
-  'Cloud Firestore NoSQL',
+  'Cloud Firestore',
   'Firebase',
   'React Bootstrap',
   'Netlify',
@@ -80,4 +80,33 @@ export const familiarSkills = [
   'Material UI',
   'Expo Go',
   'Heroku',
+];
+
+export const languages = [
+  'NodeJS',
+  'Javascript',
+  'React',
+  'Redux',
+  'Express',
+  'React Native',
+  'HTML5',
+  'CSS',
+  'Sequelize',
+  'PostgreSQL',
+  'Cloud Firestore',
+];
+
+export const tools = [
+  'Git',
+  'Github',
+  'Jasmine',
+  'Mocha',
+  'Chai',
+  'Stripe',
+  'Material UI',
+  'Expo Go',
+  'Firebase',
+  'React Bootstrap',
+  'Netlify',
+  'RESTful APIs',
 ];

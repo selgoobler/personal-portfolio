@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import '../styles/Home.css';
+import '../styles/Description.css';
 
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import GithubIcon from '@material-ui/icons/GitHub';
+import CheckIcon from '@mui/icons-material/Check';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -23,6 +25,8 @@ import me from '../assets/selina.png';
 import resume from '../assets/resume.pdf';
 
 import Popup from '../components/Popup';
+import { techSkills, familiarSkills } from '../helpers/ProjectList';
+import { testimonials } from '../helpers/Testimonials';
 
 function Home() {
   const navigate = useNavigate();
@@ -69,27 +73,72 @@ function Home() {
             <Popup trigger={popUp} setTrigger={setPopUp}></Popup>
           </div>
         </div>
-        <div className="skills">Welcome to my portfolio page!</div>
-        <span>
-          I am a curious person with a passion for growth, as exemplified by my
-          healthcare career and educational accomplishments. I know that when I
-          want to achieve something, it is attainable through hard work and
-          dedication. An example is my iOS application created with React Native
-          and Expo Go for my weekend stackathon project during the Grace Hopper
-          program. Those are two new technologies I learned in a small span of
-          time, shortly after completing an intense sprint of an e-commerce
-          project.
-        </span>
-        <br></br>
-        <Button
-          variant="contained"
-          href={resume}
-          download
-          style={{ color: '#ffffff', backgroundColor: '#6C9CD5' }}
-          // className="mt-3"
+        <motion.div
+          className="skills"
+          // animate={{ x: 100 }}
+          // transition={{
+          //   delay: 0.5,
+          //   x: { duration: 1 },
+          //   default: { ease: 'linear' },
+          // }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            default: {
+              duration: 0.3,
+              ease: [0, 0.71, 0.2, 1.01]
+            },
+            scale: {
+              type: "spring",
+              damping: 5,
+              stiffness: 100,
+              restDelta: 0.001
+            }
+          }}
         >
-          Resume
-        </Button>
+          <div className="list">
+            <h1 className="mt-5 text-center fw-bold fs-2">Technical Skills</h1>
+            <div className="description">
+              <div className="descriptionGrid">
+                <div className="descriptionList">
+                  <h6>Languages/Frameworks</h6>
+                  <br></br>
+
+                  <div className="proficient">
+                    {techSkills.map((skill) => (
+                      <div>
+                        <CheckIcon />
+                        {skill}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="descriptionList">
+                  <h6>Tools</h6>
+                  <br></br>
+                  <div className="familiar">
+                    {familiarSkills.map((skill) => (
+                      <div>
+                        <CheckIcon />
+                        {skill}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <Button
+            variant="contained"
+            href={resume}
+            download
+            style={{ color: '#ffffff', backgroundColor: '#6C9CD5' }}
+          >
+            Resume
+          </Button>
+        </motion.div>
+        <br></br>
       </div>
     </motion.div>
   );
