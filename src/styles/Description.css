@@ -1,0 +1,88 @@
+.description {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+.descriptionList {
+  width: 70vw;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+
+  /* margin-bottom: 20rem; */
+}
+
+.descriptionTitle {
+  background-color: rgb(99, 128, 135);
+  color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bolder;
+}
+.description img {
+  height: 3rem;
+
+  margin-right: 1rem;
+}
+.proficient {
+  grid-column: 1fr 1fr;
+  display: grid;
+
+  /* margin-left: 2rem; */
+}
+
+/* .testCard {
+
+  color: rgb(103, 103, 162);
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+.testCard .testText {
+
+  color: rgb(103, 103, 162);
+  display: flex;
+  margin: 20px;
+  min-height: 13rem; 
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0.6;
+  flex-direction: row;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 1300px) {
+  .descriptionList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .descriptionList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .descriptionList {
+    width: 100%;
+  }
+  .descriptionList {
+    width: 300px;
+    height: 300px;
+  }
+}

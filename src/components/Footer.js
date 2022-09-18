@@ -6,7 +6,6 @@ import GithubIcon from '@material-ui/icons/GitHub';
 import '../styles/Footer.css';
 
 function Footer() {
-
   return (
     <div className="footer">
       <div className="socialMedia">
@@ -24,7 +23,7 @@ function Footer() {
           }
         />
       </div>
-      <p>Let's connect!</p>
+      <p> Copyright &copy; Selina</p>
     </div>
   );
 }
