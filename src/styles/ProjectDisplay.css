@@ -1,35 +1,79 @@
 .project {
-  width: 100%;
-  height: calc(100vh - 100px);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 2rem;
+}
+
+.projectGrid {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-.project h1 {
-  margin-top: 8rem;
-  color: #3e497a;
-  font-size: 30px;
-  font-weight: 700;
 }
 .project img {
-margin-top: 1rem;
+  margin-top: 1rem;
   max-height: 320px;
   border-radius: 10px;
+  padding-bottom: 2rem;
+}
+.project h1 {
+  color: #9199c0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 1rem;
+}
+.projectContent {
+  background-color: rgb(142, 189, 173);
+  height: 100%;
+  width: 680px;
+  color: #e2e3e7;
+}
+.projectCardText {
+  font-size: 16px;
+  color: #7e94ed;
+  text-align: center;
+  /* padding-left: 2rem; */
+  /* padding-right: 2em; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.projectCardTitle {
+  font-size: 20px;
+  color: #60698e;
+  font-weight: bold;
+  padding-right: 2em;
+  text-align: center;
+  background-color: aqua;
 }
 
-.project p {
-
-  margin-left: 20rem;
-  margin-right: 20rem;
-  font-size: 25px;
-  color: #3e497a;
+@media only screen and (max-width: 2000px) {
+  .project {
+    /* width: 250px; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0rem;
+  }
 }
-
-.project svg {
-  font-size: 60px;
-  color: #3e497a;
+@media only screen and (max-width: 800px) {
+  .project {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .projectGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 60%; */
+    height: 100%;
+    padding-top: 0rem;
+    padding-left: 2;
+    padding-right: 2rem;
+  }
+  .projectContent {
+    height: 100%;
+    width: 400px;
+  }
 }

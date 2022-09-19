@@ -20,11 +20,15 @@
   transform: scale(1.2);
   margin-right: 1rem;
 }
+.aboutMe h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
 
 .testCard {
   padding: 2rem;
-width: 100%;
-background-color: #66000000;
+  width: 100%;
+  background-color: #66000000;
 }
 
 .testList {
@@ -49,7 +53,6 @@ background-color: #66000000;
   font-weight: bolder;
   border-radius: 30px;
 }
-
 
 .testCard .testText {
   margin: 20px;
@@ -79,7 +82,10 @@ background-color: #66000000;
     /* grid-template-columns: 1fr; */
     padding: 2rem;
   }
-  .testText{
-    height:100%
+  .testText {
+    height: 100%;
+  }
+  .testCard img {
+    height: 2rem;
   }
 }

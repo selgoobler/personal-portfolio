@@ -1,25 +1,19 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import '../styles/AboutMe.css';
-
-import resume from '../assets/resume.pdf';
-import Button from '@mui/material/Button';
-
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import Card from '@mui/material/Card';
-import Typography from '@mui/material/Typography';
-import { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 import { testimonials } from '../helpers/Testimonials';
 import about from '../assets/about-me.png';
+import '../styles/AboutMe.css';
+import resume from '../assets/resume.pdf';
+
+import Button from '@mui/material/Button';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function AboutMe() {
-  const navigate = useNavigate();
   return (
     <motion.div className="about-container">
       <motion.div
@@ -48,13 +42,12 @@ export default function AboutMe() {
                       <h3>{name}</h3>
                       <a href={link} target="_blank" rel="noreferrer">
                         <LinkedInIcon
-                          color="primary"
+                          color="disabled"
                           style={{ marginLeft: '1rem' }}
-                          sx={{ fontSize: 50 }}
                         />
                       </a>
                     </div>
-                    <p className='testText'>{recommendation}</p>
+                    <p className="testText">{recommendation}</p>
                     <br></br>
                   </SwiperSlide>
                 )
@@ -68,7 +61,7 @@ export default function AboutMe() {
           href={resume}
           download
           style={{ color: '#ffffff', backgroundColor: '#6C9CD5' }}
-          className = 'mt-5'
+          className="mt-5"
         >
           Download Resume
         </Button>

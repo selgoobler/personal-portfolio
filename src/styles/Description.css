@@ -12,7 +12,6 @@
   margin-top: 1rem;
 }
 
-
 .description h1 {
   font-weight: bolder;
   padding-bottom: 2rem;
@@ -23,11 +22,20 @@
 .descriptionGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 3rem;
 }
+
+.descriptionGrid h6 {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom:20px;
+}
+
 
 .descriptionList {
   display: grid;
-  place-items: center;
+  grid-template-columns: 1fr ;
   user-select: none;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -38,7 +46,7 @@
   border-color: black;
   color: #f8f5f5;
   background-color: rgb(83, 83, 128);
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .descriptionList:hover {
@@ -49,11 +57,7 @@
   display: grid;
   place-items: center;
   user-select: none;
-}
-
-.descriptionList h6 {
-  font-weight: bolder;
-  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .descriptionTitle {
@@ -78,39 +82,34 @@
   -webkit-columns: 2;
   -moz-columns: 2;
   width: 20rem;
+  padding-top: 2rem;
 }
-
-
-
-
-
 
 @media only screen and (max-width: 1300px) {
   .descriptionList {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 @media only screen and (max-width: 800px) {
   .descriptionList {
     width: 300px;
-    height: 100%;
-    /* padding-bottom: 2rem; */
-    grid-template-columns: 1fr;
-    padding: 2rem;
+ 
+    display: flex;
+    justify-content: flex-start;
   }
+
+  .descriptionGrid h6 {
+    font-weight: light;
+    text-align: center;
+  }
+
   .descriptionGrid {
     display: grid;
     grid-template-columns: 1fr;
-
   }
 
   .proficient {
-    columns: 1;
-    -webkit-columns: 1;
-    -moz-columns: 1;
-    width: 100%;
-    height: 100%;
-
+    padding-bottom: 1rem;
   }
 }

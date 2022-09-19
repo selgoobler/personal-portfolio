@@ -76,37 +76,41 @@ function Home() {
         >
           <div className="list">
             <div className="description">
-              <h1 className="skill-header">Technical Skills</h1>
               <div className="descriptionGrid">
-                <div className="descriptionList">
-                  <h6>Languages/Frameworks</h6>
-                  <div className="proficient">
-                    {languages.map((skill) => (
-                      <div>
-                        <CheckIcon />
-                        {skill}
-                      </div>
-                    ))}
+                <div>
+                  <div>
+                    <h6>Languages/Frameworks</h6>
+                  </div>
+                  <div className="descriptionList">
+                    <div className="proficient">
+                      {languages.map((skill) => (
+                        <div>
+                          <CheckIcon />
+                          {skill}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <div className="descriptionList">
+
+                <div>
                   <h6>Tools</h6>
-                  <div className="proficient">
-                    {tools.map((skill) => (
-                      <div>
-                        <CheckIcon />
-                        {skill}
-                      </div>
-                    ))}
+                  <div className="descriptionList">
+                    <div className="proficient">
+                      {tools.map((skill) => (
+                        <div className="skill-text">
+                          <CheckIcon />
+                          {skill}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <br></br>
         </motion.div>
       </div>
-      
     </motion.div>
   );
 }
