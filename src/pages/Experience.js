@@ -8,6 +8,8 @@ import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/Work';
 import gh from '../assets/gh-cert.png';
 
+import '../styles/Experience.css'
+
 function Experience() {
   return (
     <div className="experience">
