@@ -2,11 +2,9 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 
-
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
@@ -39,12 +37,6 @@ const Contact = () => {
   };
   return (
     <motion.div
-    // animate={{ x: 100 }}
-    // transition={{
-    //   delay: 0.5,
-    //   x: { duration: 1 },
-    //   default: { ease: "linear" }
-    // }}
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
@@ -57,7 +49,6 @@ const Contact = () => {
             display="flex"
             justifyContent="center"
             alignItems="center"
-      
           >
             <Card
               sx={{ width: 345 }}

@@ -4,11 +4,11 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import '../styles/Experience.css';
+
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/Work';
 import gh from '../assets/gh-cert.png';
-
-import '../styles/Experience.css'
 
 function Experience() {
   return (
@@ -23,32 +23,40 @@ function Experience() {
           <div style={{ color: '#3C5E87' }}>
             <div className="text-center">
               <h4 className="vertical-timeline-element-title">
-                <b>Grace Hopper at Fullstack Academy</b>
+                <b>Grace Hopper Program</b>
               </h4>
+              <h6 className="vertical-timeline-element-title">
+                <p className="mt-1 ">Fullstack Academy, New York, NY</p>
+              </h6>
             </div>
             <br></br>
 
             <ul className="list">
+            <div className="text-center">
+                <b>Certificate of Completion</b>
+              </div>
+              <div className="d-flex justify-content-center mb-3">
+                <img src={gh} alt="gh-cert" style={{ height: '15rem' }}></img>
+              </div>
+         
               <li className="item">
-                A 17-week immersive software engineering program based in New
-                York City, centered on full-stack JavaScript development
+                A 17-week immersive software engineering program for women and
+                non-binary students, based in New York City, centered on
+                full-stack JavaScript development
               </li>
               <li>
                 <b>Technology Stack:</b>
                 <br></br>
                 Node.js, Express, Sequelize ORM for PostgreSQL databases, React
                 and Redux, React Native, Firebase, Firestore, Bootstrap, React
-                Bootstrap, Styled Components, HTML, CSS, and CS fundamentals.
-                Developer tools used: Git, Postman, Postico, Visual Studio Code,
-                Chrome Dev Tools, Jasmine, Mocha, Chai, Netlify, and Heroku.
+                Bootstrap, HTML, CSS, and CS fundamentals.
               </li>
               <li>
-                <b>Certificate of Completion:</b>
+                <b> Developer tools used:</b> <br></br>
+                Git, Postman, Postico, Visual Studio Code, Chrome Dev Tools,
+                Jasmine, Mocha, Chai, Netlify, and Heroku.
               </li>
             </ul>
-          </div>
-          <div className="d-flex justify-content-center mb-3">
-            <img src={gh} alt="gh-cert" style={{ height: '15rem' }}></img>
           </div>
         </VerticalTimelineElement>
 
@@ -82,7 +90,6 @@ function Experience() {
                 Coordinated care and services for patients to provide
                 individualized plans of care to improve quality of life
               </li>
-            
             </ul>
           </div>
         </VerticalTimelineElement>
@@ -113,7 +120,9 @@ function Experience() {
                   that empowers healthcare facilities to continually improve and
                   provide quality health care
                 </li>
-                <li>Program was fully remote with monthly contact with mentors</li>
+                <li>
+                  Program was fully remote with monthly contact with mentors
+                </li>
                 <li>
                   With mentor approval, I was able to accelerate my degree
                 </li>
@@ -127,7 +136,6 @@ function Experience() {
           iconStyle={{ background: '#e9d35b', color: '#fff' }}
           icon={<WorkIcon />}
         >
-          
           <div style={{ color: '#3C5E87' }}>
             <div className="text-center">
               <h4 className="vertical-timeline-element-title">
@@ -167,20 +175,16 @@ function Experience() {
           iconStyle={{ background: '#3e497a', color: '#fff' }}
           icon={<SchoolIcon />}
         >
-            <div style={{ color: '#3C5E87' }}>
+          <div style={{ color: '#3C5E87' }}>
             <div className="text-center">
               <h4 className="vertical-timeline-element-title">
-                <b>  Hunter-Bellevue School of Nursing</b>
+                <b> Hunter-Bellevue School of Nursing</b>
               </h4>
               <h6 className="vertical-timeline-element-title">
-                <p className="mt-1 ">
-                Bachelors of Science in Nursing
-                </p>
+                <p className="mt-1 ">Bachelors of Science in Nursing</p>
               </h6>
-        
             </div>
-
-    </div>
+          </div>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

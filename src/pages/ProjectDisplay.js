@@ -15,7 +15,7 @@ function Goals() {
   const project = ProjectList[id];
   return (
     <>
-      <div className="projectCardTitle">Goals:</div>
+      <div className="projectCardTitle">Goals</div>
       <div className="projectCardText">{project.goal}</div>
       <div className="projectCardTitle">What I Learned</div>
       <div className="projectCardText">{project.learned}</div>
@@ -46,21 +46,14 @@ function ProjectDisplay() {
             <br></br>
             <div className="projectCardText">{project.description}</div>
             <div className="projectCardText">
-              <strong style = {{color: '#8493A5'}}>Technology Stack:</strong>
+              <strong style = {{color: '#8493A5'}}>Tech Stack</strong>
               <br></br>
               {project.skills}
             </div>
             <div className="projectGrid">
               <ExpandMoreIcon onClick={() => setShowGoals(!showGoals)} />
-
               {showGoals && <Goals>show/hide typography</Goals>}
             </div>
-
-            {/*              
-            <div className="projectCardTitle">Goal:</div>
-            <div className="projectCardText">{project.goal}</div>
-            <div className="projectCardTitle">What I Learned</div>
-            <div className="projectCardText">{project.learned}</div> */}
           </Card>
         </div>
         <br></br>

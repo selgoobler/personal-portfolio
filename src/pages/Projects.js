@@ -1,9 +1,9 @@
 import React from "react";
+import { motion } from 'framer-motion';
+import "../styles/Projects.css";
+
 import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
-import { motion } from 'framer-motion';
-
-import "../styles/Projects.css";
 
 function Projects() {
   return (

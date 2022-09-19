@@ -1,17 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import '../styles/AboutMe.css';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Button from '@mui/material/Button';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
 
 import { testimonials } from '../helpers/Testimonials';
 import about from '../assets/about-me.png';
-import '../styles/AboutMe.css';
 import resume from '../assets/resume.pdf';
 
-import Button from '@mui/material/Button';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 export default function AboutMe() {
   return (
