@@ -32,13 +32,13 @@ function Experience() {
             <br></br>
 
             <ul className="list">
-            <div className="text-center">
+              <div className="text-center">
                 <b>Certificate of Completion</b>
               </div>
               <div className="d-flex justify-content-center mb-3">
                 <img src={gh} alt="gh-cert" style={{ height: '15rem' }}></img>
               </div>
-         
+
               <li className="item">
                 A 17-week immersive software engineering program for women and
                 non-binary students, based in New York City, centered on
@@ -111,23 +111,19 @@ function Experience() {
               </h6>
             </div>
             <br></br>
-
-            <h6 className="vertical-timeline-element-subtitle">
-              <ul>
-                <li>
-                  Nursing Informatics combines nursing, data management,
-                  analyzation, and communication, to create and maintain data
-                  that empowers healthcare facilities to continually improve and
-                  provide quality health care
-                </li>
-                <li>
-                  Program was fully remote with monthly contact with mentors
-                </li>
-                <li>
-                  With mentor approval, I was able to accelerate my degree
-                </li>
-              </ul>
-            </h6>
+            <ul>
+              <li>
+                Nursing Informatics combines nursing, data management,
+                analyzation, and communication, to create and maintain data that
+                empowers healthcare facilities to continually improve and
+                provide quality health care
+              </li>
+              <li>
+                Program was fully remote and required self discipline
+                and ambition
+              </li>
+              <li>Accelerated degree by increasing course load</li>
+            </ul>
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -184,6 +180,21 @@ function Experience() {
                 <p className="mt-1 ">Bachelors of Science in Nursing</p>
               </h6>
             </div>
+            <br></br>
+            <ul>
+              <li>
+                The flagship nursing school of The City University of New York
+                prepares nurses for 21st Century practice in complex urban
+                environments with diverse populations.
+              </li>
+              <li>
+                Accredited by the Commission on Collegiate Nursing Education
+              </li>
+              <li>
+                <b>Honors: </b>Cum Laude, Sigma Theta Tau International, Jenny
+                Hunter Scholar
+              </li>
+            </ul>
           </div>
         </VerticalTimelineElement>
       </VerticalTimeline>
