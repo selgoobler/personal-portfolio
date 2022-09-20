@@ -1,6 +1,6 @@
 # Portfolio
 
-Hi! My name is Selina, welcome to my portfolio! Leave a message and say hi!
+Hi! My name is Selina, welcome to my portfolio! Leave a message and say hi! 
 Portfolio initialized with Create React App. 
 
 ## Socials
