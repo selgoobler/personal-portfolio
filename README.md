@@ -1,6 +1,7 @@
 # Portfolio
 
-Hi! My name is Selina, welcome to my portfolio!   Leave a message and say hi, I'll respond as soon as I can!  Portfolio initialized with Create React App. 
+Hi! My name is Selina, welcome to my portfolio! Leave a message and say hi, I'll respond as soon as I can!  
+  Portfolio initialized with Create React App. 
 
 ## Socials
 Linkedin: https://www.linkedin.com/in/sselinang/  
