@@ -33,24 +33,8 @@ function Home() {
 
           <div className="prompt">
             <p>
-              A full stack developer with a passion for learning and creating.
+              A software engineer with a passion for learning and creating.
             </p>
-            {/* <LinkedInIcon
-              onClick={(event) =>
-                (window.location.href =
-                  'https://www.linkedin.com/in/sselinang/')
-              }
-            />
-            <a href="mailto:sselinang@gmail.com">
-              <EmailIcon />
-            </a>
-
-            <GithubIcon
-              onClick={(event) =>
-                (window.location.href = 'https://github.com/selgoobler')
-              }
-            /> */}
-
             <div className="action">
               <ContactMailIcon onClick={handleContact} sx={{ fontSize: 50 }} />
               <Popup trigger={popUp} setTrigger={setPopUp}></Popup>
