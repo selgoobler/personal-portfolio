@@ -31,32 +31,35 @@ function Experience() {
             </div>
             <br></br>
 
-            <ul className="list">
-              <div className="text-center">
+
+              <div className="text-center pb-2">
                 <b>Certificate of Completion</b>
               </div>
               <div className="d-flex justify-content-center mb-3">
                 <img src={gh} alt="gh-cert" style={{ height: '15rem' }}></img>
               </div>
 
-              <li className="item">
+          
                 A 17-week immersive software engineering program for women and
                 non-binary students, based in New York City, centered on
                 full-stack JavaScript development
-              </li>
-              <li>
-                <b>Technology Stack:</b>
-                <br></br>
-                Node.js, Express, Sequelize ORM for PostgreSQL databases, React
+          
+       
+            <h6 className="vertical-timeline-element-title">
+              <p className="text-center">
+                <b>Technology Stack</b>
+               </p>
+               Node.js, Express, Sequelize ORM for PostgreSQL databases, React
                 and Redux, React Native, Firebase, Firestore, Bootstrap, React
-                Bootstrap, HTML, CSS, and CS fundamentals.
-              </li>
-              <li>
-                <b> Developer tools used:</b> <br></br>
-                Git, Postman, Postico, Visual Studio Code, Chrome Dev Tools,
-                Jasmine, Mocha, Chai, Netlify, and Heroku.
-              </li>
-            </ul>
+                Bootstrap, HTML, CSS, and CS fundamentals
+            </h6>
+            <h6 className="vertical-timeline-element-title">
+              <p className="text-center">
+                <b>Developer Tools</b>
+               </p>
+               Git, Postman, Postico, Visual Studio Code, Chrome Dev Tools,
+                Jasmine, Mocha, Chai, Netlify, and Heroku
+            </h6>
           </div>
         </VerticalTimelineElement>
 
@@ -110,19 +113,26 @@ function Experience() {
                 </p>
               </h6>
             </div>
-            <br></br>
+            <h6 className="vertical-timeline-element-title">
+              <p className="text-center">
+                <b>   Courses</b>
+               </p>
+            </h6>
             <ul>
-              <li>
+              <li>Advancing Evidence-Based Innovation in Nursing Practice</li>
+              <li>Data Science and Analytics</li>
+              <li>Data Modeling and Database Management Systems</li>
+              <li>Informatics System Analysis and Design</li>
+              <h6 className="vertical-timeline-element-title">
+              <p className="text-center">         <b>Program Description</b></p>
+            </h6>
+             
                 Nursing Informatics combines nursing, data management,
                 analyzation, and communication, to create and maintain data that
                 empowers healthcare facilities to continually improve and
                 provide quality health care
-              </li>
-              <li>
-                Program was fully remote and required self discipline
-                and ambition
-              </li>
-              <li>Accelerated degree by increasing course load</li>
+     
+           
             </ul>
           </div>
         </VerticalTimelineElement>
@@ -180,20 +190,30 @@ function Experience() {
                 <p className="mt-1 ">Bachelors of Science in Nursing</p>
               </h6>
             </div>
-            <br></br>
+            <h6 className="vertical-timeline-element-title">
+              <p className="text-center">
+                <b>Description</b>
+               </p>
+            </h6>
             <ul>
               <li>
                 The flagship nursing school of The City University of New York
-                prepares nurses for 21st Century practice in complex urban
-                environments with diverse populations.
+                prepared nurses to practice in complex urban
+                environments with diverse populations
               </li>
               <li>
                 Accredited by the Commission on Collegiate Nursing Education
               </li>
-              <li>
-                <b>Honors: </b>Cum Laude, Sigma Theta Tau International, Jenny
-                Hunter Scholar
-              </li>
+            
+            </ul>
+            <h6 className="vertical-timeline-element-title">
+              <p className="text-center">
+                <b>Honors</b>
+               </p>
+            </h6>
+            <ul>
+              <li>Cum Laude, Sigma Theta Tau International, Jenny
+                Hunter Scholar</li>
             </ul>
           </div>
         </VerticalTimelineElement>
