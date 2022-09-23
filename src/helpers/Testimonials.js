@@ -1,5 +1,6 @@
 import peer2 from '../assets/peer1.png'
 import peer1 from '../assets/peer2.png'
+import peer3 from '../assets/peer3.png'
 
 export const testimonials = [
   {
@@ -18,4 +19,13 @@ export const testimonials = [
     link: 'https://www.linkedin.com/in/dsayos/',
     image: peer2
   },
+  {
+    id: 3,
+    name: 'Lisa Younes',
+    recommendation:
+      "Selina and I were part of a four-person team to build a mock e-commerce website in the Grace Hopper program. Throughout the challenges of learning new approaches under a tight timeline, she was easy to communicate and collaborate with while maintaining a positive perspective. She helped to make a valuable learning experience even better with her upbeat, focused, and professional attitude.",
+    link: 'https://www.linkedin.com/in/lisayounes/',
+    image: peer3
+  },
+
 ];
